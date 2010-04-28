@@ -348,7 +348,13 @@ public class SmilPlayer implements Runnable {
     }
 
     public synchronized void stopWhenReload() {
-        endActiveElements();
+        if (!isStoppedState()) {
+            actionPause();
+            mAction = SmilPlayerAction.PAUSE;
+            notifyAll();
+        } else {
+            endActiveElements();
+        }
     }
 
     public synchronized void reload() {
