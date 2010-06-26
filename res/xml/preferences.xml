@@ -133,6 +133,10 @@
     </PreferenceScreen>
   </PreferenceCategory>
   <PreferenceCategory android:title="@string/pref_extra_settings">
+	<CheckBoxPreference android:key="pref_key_mms_fullscreen_landscape"
+                        android:title="@string/pref_title_mms_fullscreen_landscape"
+                        android:summary="@string/pref_summary_mms_fullscreen_landscape"
+                        android:defaultValue="true" />
     <CheckBoxPreference android:key="pref_key_mms_send_on_enter"
                         android:title="@string/pref_title_mms_send_on_enter"
                         android:summary="@string/pref_summary_mms_send_on_enter"

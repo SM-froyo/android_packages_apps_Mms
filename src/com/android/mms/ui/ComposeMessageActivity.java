@@ -95,6 +95,7 @@ import android.text.util.Linkify;
 import android.util.Config;
 import android.util.Log;
 import android.view.ContextMenu;
+import android.view.inputmethod.EditorInfo;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -1681,6 +1682,11 @@ public class ComposeMessageActivity extends Activity
 
         // Initialize members for UI elements.
         initResourceRefs();
+
+        if (prefs.getBoolean(MessagingPreferenceActivity.FULLSCREEN_LANDSCAPE, true) == false) {
+                EditText eTe = (EditText) findViewById(R.id.embedded_text_editor);        	
+                eTe.setImeOptions(eTe.getImeOptions() | EditorInfo.IME_FLAG_NO_EXTRACT_UI);
+        }
 
         mContentResolver = getContentResolver();
         mBackgroundQueryHandler = new BackgroundQueryHandler(mContentResolver);
