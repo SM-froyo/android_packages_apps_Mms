@@ -53,6 +53,7 @@ import android.content.IntentFilter;
 import android.content.DialogInterface.OnClickListener;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SqliteWrapper;
@@ -68,6 +69,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
 import android.os.SystemProperties;
+import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.provider.DrmStore;
 import android.provider.MediaStore;
@@ -222,6 +224,8 @@ public class ComposeMessageActivity extends Activity
 
     private boolean mExitOnSent;            // Should we finish() after sending a message?
 
+    private boolean mSendOnEnter;
+
     private View mTopPanel;                 // View containing the recipient and subject editors
     private View mBottomPanel;              // View containing the text editor, send button, ec.
     private EditText mTextEditor;           // Text editor to type your message into
@@ -238,6 +242,8 @@ public class ComposeMessageActivity extends Activity
 
     private boolean mIsKeyboardOpen;             // Whether the hardware keyboard is visible
     private boolean mIsLandscape;                // Whether we're in landscape mode
+
+    private boolean mBackToAllThreads;           // Always return to all threads list
 
     private boolean mPossiblePendingNotification;   // If the message list has changed, we may have
                                                     // a pending notification to deal with.
@@ -1666,6 +1672,10 @@ public class ComposeMessageActivity extends Activity
         setContentView(R.layout.compose_message_activity);
         setProgressBarVisibility(false);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences((Context)ComposeMessageActivity.this);
+        mSendOnEnter = prefs.getBoolean(MessagingPreferenceActivity.SEND_ON_ENTER, true);
+        mBackToAllThreads = prefs.getBoolean(MessagingPreferenceActivity.BACK_TO_ALL_THREADS, false);
+
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE |
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
@@ -2082,6 +2092,10 @@ public class ComposeMessageActivity extends Activity
                         finish();
                     }
                 });
+                // Always return to all threads
+                if (mBackToAllThreads) {
+                    goToConversationList();
+                }
                 return true;
         }
 
@@ -2815,6 +2829,10 @@ public class ComposeMessageActivity extends Activity
 
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         if (event != null) {
+            /* Faruq: CyanogenMod poison */
+            if (((event.getKeyCode() == KeyEvent.KEYCODE_DPAD_CENTER) || (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) && !mSendOnEnter) {
+            	return false;
+            }
             // if shift key is down, then we want to insert the '\n' char in the TextView;
             // otherwise, the default action is to send the message.
             if (!event.isShiftPressed()) {
