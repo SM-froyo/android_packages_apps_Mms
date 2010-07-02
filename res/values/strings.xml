@@ -787,7 +787,7 @@
 	<string name="pref_title_mms_back_to_all_threads">Back to all threads</string>
     <string name="pref_summary_mms_back_to_all_threads">Always go to all-threads when back button is pressed</string>
 
-    <string name="pref_title_mms_fullscreen_landscape">Fullscreen Lanscape</string>
+    <string name="pref_title_mms_fullscreen_landscape">Fullscreen Landscape</string>
     <string name="pref_summary_mms_fullscreen_landscape">Enable/disable fullscreen keyboard in landscape mode</string>
 
     <string name="pref_title_mms_send_on_enter">Send on Enter</string>
