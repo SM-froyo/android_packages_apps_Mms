@@ -70,6 +70,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String BACK_TO_ALL_THREADS     = "pref_key_mms_back_to_all_threads";
     public static final String USER_AGENT                   = "pref_key_mms_user_agent";
     public static final String USER_AGENT_CUSTOM            = "pref_key_mms_user_agent_custom";
+    public static final String EMAIL_ADDR_COMPLETION        = "pref_key_mms_email_addr_completion";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
