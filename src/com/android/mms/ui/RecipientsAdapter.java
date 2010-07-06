@@ -91,7 +91,7 @@ public class RecipientsAdapter extends ResourceCursorAdapter {
         mContext = context;
         mContentResolver = context.getContentResolver();
 	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-	mEmailAddrComletion = prefs.getBoolean(MessagingPreferenceActivity.EMAIL_ADDR_COMPLETION, false);
+	mEmailAddrCompletion = prefs.getBoolean(MessagingPreferenceActivity.EMAIL_ADDR_COMPLETION, false);
     }
 
     @Override
@@ -204,7 +204,7 @@ public class RecipientsAdapter extends ResourceCursorAdapter {
                     null, //selection,
                     null,
                     SORT_ORDER);
-        if (mEmailAddrComletion) {
+        if (mEmailAddrCompletion) {
             uri = Uri.withAppendedPath(Email.CONTENT_FILTER_URI, Uri.encode(cons));
             Cursor addrCursor =
                 mContentResolver.query(uri,
