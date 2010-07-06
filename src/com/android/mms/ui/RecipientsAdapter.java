@@ -53,7 +53,7 @@ public class RecipientsAdapter extends ResourceCursorAdapter {
     public static final int LABEL_INDEX      = 4;
     public static final int NAME_INDEX       = 5;
 
-    private boolean mEmailAddrComletion;
+    private boolean mEmailAddrCompletion;
 
     private static final String[] PROJECTION_PHONE = {
         Phone._ID,                  // 0
