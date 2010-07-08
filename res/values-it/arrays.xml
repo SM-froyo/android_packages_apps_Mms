@@ -56,4 +56,12 @@
     <item msgid="6334637439528489607">"Risata"</item>
     <item msgid="7602915122893958066">"Confuso"</item>
   </string-array>
+    
+    <string-array name="pref_mms_notification_led_blink_rate_entries">
+        <item>2 (Veloce)</item>
+        <item>3</item>
+        <item>4 (Medio)</item>
+        <item>5</item>
+        <item>6 (Lento)</item>
+    </string-array>
 </resources>
