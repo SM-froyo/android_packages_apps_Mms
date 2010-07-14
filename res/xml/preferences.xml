@@ -112,7 +112,7 @@
                           android:dialogTitle="@string/pref_dialogtitle_mms_notification_led_blink_rate" />
         </PreferenceCategory>
         <PreferenceCategory android:title="@string/pref_title_mms_notification_vibrate_settings">
-          <ListPreference     android:layout="?android:attr/preferenceLayoutChild"
+          <ListPreference android:layout="?android:attr/preferenceLayoutChild"
                         android:dependency="pref_key_enable_notifications"
                         android:key="pref_key_vibrateWhen"
                         android:defaultValue="@string/prefDefault_vibrateWhen"
@@ -129,6 +129,11 @@
                           android:entries="@array/pref_mms_notification_vibrate_pattern_entries"
                           android:entryValues="@array/pref_mms_notification_vibrate_pattern_values"
                           android:dialogTitle="@string/pref_title_mms_notification_vibrate_pattern" />
+          <CheckBoxPreference android:key="pref_key_mms_notification_vibrate_call"
+                          android:dependency="pref_key_enable_notifications"
+                          android:defaultValue="true"
+                          android:title="@string/pref_title_mms_notification_vibrate_call"
+                          android:summary="@string/pref_summary_mms_notification_vibrate_call" />
         </PreferenceCategory>
     </PreferenceScreen>
   </PreferenceCategory>
