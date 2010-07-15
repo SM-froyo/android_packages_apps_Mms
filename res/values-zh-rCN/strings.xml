@@ -374,14 +374,14 @@
     <string name="pref_summary_mms_send_on_enter">允许/禁用 通过按回车键发送短信</string>
 
     <string name="pref_mms_custom_option">自定义..</string>
-    <string name="pref_title_mms_user_agent">自定义 User-Agent</string>
-    <string name="pref_summary_mms_user_agent">伪装成其他品牌的手机以使用彩信功能</string>
-    <string name="pref_mms_user_agent_custom_set">自定义 User-Agent 为:\n</string>
+    <string name="pref_title_mms_user_agent">自定义用户代理标识</string>
+    <string name="pref_summary_mms_user_agent">设置用户代理标识为其他手机以使用彩信功能</string>
+    <string name="pref_mms_user_agent_custom_set">自定义用户代理标识为:\n</string>
     <string name="pref_title_mms_email_addr_completion">邮件地址自动完成</string>
-    <string name="pref_summary_mms_email_addr_completion">启用/禁用 接收者的邮件地址自动完成功能</string>
+    <string name="pref_summary_mms_email_addr_completion">开关接收者的邮件地址自动完成功能</string>
 
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">黑色背景</string>
-    <string name="pref_summary_mms_black_background">启用/禁用 黑色背景\n(重启该程序)</string>
+    <string name="pref_summary_mms_black_background">启用/禁用 黑色背景\n(需重启程序)</string>
 
 </resources>
