@@ -29,14 +29,14 @@
     <string name="menu_preferences" msgid="4693148116114749414">"设置"</string>
     <string name="menu_add_address_to_contacts" msgid="2313624913486309940">"将<xliff:g id="NAME">%s</xliff:g>添加到联系人"</string>
     <string name="menu_call" msgid="5877123227307074690">"呼叫"</string>
-    <string name="menu_delete_all" msgid="8853352701914512057">"删除会话"</string>
+    <string name="menu_delete_all" msgid="8853352701914512057">"删除所有会话"</string>
     <string name="menu_delete" msgid="1851666911396479006">"删除会话"</string>
     <string name="menu_undelivered_messages" msgid="3896857623211780616">"未能送出的信息"</string>
     <string name="menu_view" msgid="7448852683948080108">"查看会话"</string>
     <string name="refreshing" msgid="987335057871404222">"正在刷新..."</string>
     <string name="has_draft" msgid="2487465595514636160">"草稿"</string>
     <string name="broadcast_from_to" msgid="2050376286109362539">"由<xliff:g id="SENDER">%1$s</xliff:g>发送给<xliff:g id="RECIPIENT">%2$s</xliff:g>"</string>
-    <string name="anonymous_recipient" msgid="2501437626187039034">"匿名"</string>
+    <string name="anonymous_recipient" msgid="2501437626187039034">"匿名收件人"</string>
     <string name="no_subject_view" msgid="7795086723069563537">"（无主题）"</string>
     <string name="messagelist_sender_self" msgid="3579016854116401602">"本机号码"</string>
     <string name="view_picture" msgid="4356315935277709195">"查看照片"</string>
@@ -47,7 +47,7 @@
     <string name="sent_on" msgid="5868288548564632354">"发送时间：<xliff:g id="DATE">%s</xliff:g>"</string>
     <string name="expire_on" msgid="4436268382742593921">"过期时间：<xliff:g id="DATE">%s</xliff:g>"</string>
     <string name="kilobyte" msgid="534782148965716631">"KB"</string>
-    <string name="undelivered_msg_dialog_title" msgid="7479433403599785755">"信息未传送出去"</string>
+    <string name="undelivered_msg_dialog_title" msgid="7479433403599785755">"信息发送失败"</string>
     <string name="undelivered_msg_dialog_body" msgid="3574032060588309397">"无法发送此信息。"\n"尝试发送的时间：<xliff:g id="MESSAGE">%s</xliff:g>。"</string>
     <string name="undelivered_sms_dialog_body" msgid="6755818550013032420">"无法发送此信息。"</string>
     <string name="delete_thread" msgid="757258847736632791">"删除会话"</string>
@@ -78,7 +78,7 @@
     <string name="compose_title" msgid="558578836596816068">"撰写"</string>
     <string name="to_hint" msgid="224029549150332986">"接收者"</string>
     <string name="subject_hint" msgid="4296714962311604126">"主题"</string>
-    <string name="add_attachment" msgid="7103751293360532684">"附加"</string>
+    <string name="add_attachment" msgid="7103751293360532684">"添加附件"</string>
     <string name="add_subject" msgid="7616134948428265870">"添加主题"</string>
     <string name="discard" msgid="1624800293064498479">"舍弃"</string>
     <string name="view" msgid="7929667761715467136">"查看"</string>
@@ -88,22 +88,22 @@
     <string name="mms" msgid="1587631213714914559">"彩信"</string>
     <string name="all_threads" msgid="2663426830306307194">"所有会话"</string>
     <string name="type_to_compose_text_enter_to_send" msgid="7553404984078924360">"输入内容"</string>
-    <string name="open_keyboard_to_compose_message" msgid="1668723196441776085">"打开键盘来写信息"</string>
+    <string name="open_keyboard_to_compose_message" msgid="1668723196441776085">"打开键盘以撰写信息"</string>
     <string name="image_too_large" msgid="261880224164478061">"图片太大"</string>
     <string name="ask_for_automatically_resize" msgid="7657603662407738758">"发送前自动调整图片大小？"</string>
     <string name="compressing" msgid="1961357529661045180">"图片过大。正在压缩…"</string>
     <string name="unsupported_media_format" msgid="5037111178813903722">"不支持<xliff:g id="NAME">%1$s</xliff:g>格式"</string>
     <string name="select_different_media" msgid="7573116916321879964">"请选择另一个<xliff:g id="NAME">%1$s</xliff:g>。"</string>
     <string name="exceed_message_size_limitation" msgid="6027753647094742437">"已达到信息大小上限。"</string>
-    <string name="message_too_big_for_video" msgid="2639367545165352543">"该短信太大，无法附加视频。"</string>
+    <string name="message_too_big_for_video" msgid="2639367545165352543">"该短信太大，无法添加视频。"</string>
     <string name="failed_to_add_media" msgid="8272471485019037446">"抱歉，您无法将此<xliff:g id="NAME">%1$s</xliff:g>添加到信息。"</string>
     <string name="failed_to_resize_image" msgid="5608354151631833669">"未调整图片大小。"</string>
     <string name="resize_image_error_information" msgid="4897031754321114959">"抱歉，此图片缩小后仍太大，无法发送。"</string>
-    <string name="forward_prefix" msgid="276280492803486464">"Fwd: "</string>
+    <string name="forward_prefix" msgid="276280492803486464">"转发: "</string>
     <string name="discard_message" msgid="6078326880056142781">"舍弃"</string>
     <string name="discard_message_reason" msgid="2667664943003796133">"您的信息没有有效的接收者，将被舍弃。"</string>
     <string name="has_invalid_recipient" msgid="1485388396900997383">"无效接收者：&lt;<xliff:g id="NAME">%1$s</xliff:g>&gt;"</string>
-    <string name="invalid_destination" msgid="7643854177921895615">"输入的地址无效。"</string>
+    <string name="invalid_destination" msgid="7643854177921895615">"您输入的地址无效。"</string>
     <string name="invalid_recipient_message" msgid="7315539322634238519">"请更正接收者，否则他们将无法收到信息。"</string>
     <string name="cannot_send_message" msgid="3918913277571649400">"无法发送此信息"</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"您的信息没有有效的接收者。"</string>
@@ -181,7 +181,7 @@
     <string name="pref_title_notification_vibrateWhen" msgid="4251208067092761057">"振动"</string>
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"收到通知时还振动提醒"</string>
     <string name="pref_title_notification_ringtone" msgid="5159574093788155149">"选择铃声"</string>
-    <string name="pref_messages_to_save" msgid="3202539743892934926">"设置要保存的彩信数量"</string>
+    <string name="pref_messages_to_save" msgid="3202539743892934926">"设置要保存的信息数量"</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"始终"</item>
     <item msgid="6069709696037750627">"仅在静音时"</item>
@@ -194,11 +194,11 @@
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"漫游时自动检索信息"</string>
     <string name="to_label" msgid="2355268818058389047">"接收者 "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"删除"</string>
-    <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"是否删除锁定的讯息？"</string>
+    <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"是否删除锁定的信息？"</string>
     <string name="confirm_delete_conversation" msgid="6115966687389279855">"将会删除整个会话。"</string>
     <string name="confirm_delete_all_conversations" msgid="9036166685235092757">"将会删除所有会话。"</string>
     <string name="confirm_delete_message" msgid="9121480656609809591">"将会删除此信息。"</string>
-    <string name="confirm_delete_locked_message" msgid="5863578342246077057">"确定要删除此锁定短信吗？"</string>
+    <string name="confirm_delete_locked_message" msgid="5863578342246077057">"确定要删除此锁定信息吗？"</string>
     <string name="confirm_delete_all_messages" msgid="5836389073199814660">"将会删除整个会话。"</string>
     <string name="confirm_delete_all_SIM_messages" msgid="65701806463341097">"SIM 卡上的所有信息都会删除。"</string>
     <string name="confirm_delete_SIM_message" msgid="767624259182679915">"SIM 卡上的这条信息会被删除。"</string>
@@ -225,12 +225,12 @@
     <string name="message_class_label" msgid="5115748690481550562">"信息类别： "</string>
     <string name="error_code_label" msgid="5810068247647058769">"错误代码： "</string>
     <string name="menu_edit" msgid="3056513240155967777">"编辑"</string>
-    <string name="menu_retry_sending" msgid="3146582005568302643">"重试发送"</string>
+    <string name="menu_retry_sending" msgid="3146582005568302643">"重新发送"</string>
     <string name="menu_retry_sending_all" msgid="1870529976966340616">"重试发送全部"</string>
     <string name="menu_delete_messages" msgid="2610286783513247420">"删除信息"</string>
     <string name="retrying_dialog_body" msgid="4738260459043003431">"由于连接出现问题，未发送此<xliff:g id="MESSAGE">%s</xliff:g>信息。"\n"正在尝试重新发送..."</string>
-    <string name="menu_lock" msgid="136863583207382259">"锁定短信"</string>
-    <string name="menu_unlock" msgid="5264877122797287929">"解除短信的锁定"</string>
+    <string name="menu_lock" msgid="136863583207382259">"锁定信息"</string>
+    <string name="menu_unlock" msgid="5264877122797287929">"解除锁定"</string>
     <string name="sim_copy_to_phone_memory" msgid="5895767417844881971">"复制到手机内存"</string>
     <string name="sim_delete" msgid="610790510655316922">"删除"</string>
     <string name="sim_manage_messages_title" msgid="3989147182100584333">"SIM 卡上的短信"</string>
@@ -262,8 +262,8 @@
     <string name="notification_failed_multiple_title" msgid="1112032024904397126">"信息未发送"</string>
     <string name="sim_full_title" msgid="1809829051697702810">"SIM 卡已满"</string>
     <string name="sim_full_body" msgid="6241664980790322925">"删除部分信息以腾出更多空间。"</string>
-    <string name="sms_full_title" msgid="6041287140125011854">"短信内存已满"</string>
-    <string name="sms_full_body" msgid="7757490997215434514">"存储空间已满，无法接收传入的短信，请删除旧短信。"</string>
+    <string name="sms_full_title" msgid="6041287140125011854">"短信存储已满"</string>
+    <string name="sms_full_body" msgid="7757490997215434514">"存储空间已满，无法接收传入的信息，请删除旧信息。"</string>
     <string name="sms_rejected_title" msgid="8548394922491529811">"短信遭拒"</string>
     <string name="sms_rejected_body" msgid="7187754586609631934">"由于未知的原因，导致传入的短信被拒收。"</string>
     <string name="type_audio" msgid="3842064092332309756">"音频"</string>
@@ -275,7 +275,7 @@
     <string name="no_subject" msgid="4168963736134552285">"（无主题）"</string>
     <string name="unknown_sender" msgid="4929330613278853635">"未知发送者"</string>
     <string name="dl_failure_notification" msgid="2457080452886498701">"下载来自<xliff:g id="FROM">%2$s</xliff:g>的<xliff:g id="SUBJECT">%1$s</xliff:g>信息失败。"</string>
-    <string name="dl_expired_notification" msgid="950390029992535809">"此短信已过期，将被删除。"</string>
+    <string name="dl_expired_notification" msgid="950390029992535809">"此信息已过期，将被删除。"</string>
     <string name="rate_limit_surpassed" msgid="1347801608211628177">"确认"</string>
     <string name="confirm_rate_limit" msgid="234228299751243067">"即将发送多条彩信。确定要这样做吗？"</string>
     <string name="message_download_failed_title" msgid="5722226064394767921">"信息未下载"</string>
@@ -310,10 +310,10 @@
     <string name="class_0_message_activity" msgid="8474176218999130627">"0 类信息"</string>
     <string name="send_using_mms_activity" msgid="3703434556280345726">"以彩信形式发送…"</string>
     <string name="select_contact_method_activity" msgid="1743384358979323991">"选择联系方法"</string>
-    <string name="search_label" msgid="6042598929386174964">"正在传递短信"</string>
-    <string name="search_hint" msgid="7183732852849365466">"搜索短信"</string>
-    <string name="search" msgid="7560238620274735199">"短信"</string>
-    <string name="search_setting_description" msgid="4104004595086437572">"消息中的文字"</string>
+    <string name="search_label" msgid="6042598929386174964">"正在发送信息"</string>
+    <string name="search_hint" msgid="7183732852849365466">"搜索信息"</string>
+    <string name="search" msgid="7560238620274735199">"信息"</string>
+    <string name="search_setting_description" msgid="4104004595086437572">"信息中的文字"</string>
     <string name="search_empty" msgid="645052646985297065">"没有匹配项"</string>
   <plurals name="search_results_title">
     <item quantity="one" msgid="675571420878010439">"<xliff:g id="NUMBER">%s</xliff:g> 项符合“%s”的搜索结果"</item>
@@ -330,7 +330,7 @@
     <string name="storage_limits_setting" msgid="4952781049308537373">"设置限制"</string>
     <string name="storage_limits_setting_dismiss" msgid="1433841310158458034">"无限制"</string>
     <string name="too_many_unsent_mms" msgid="8005932837414848242">"目前不能发送消息。未发送的彩信过多。"</string>
-    <string name="me" msgid="341726346007839961">"本机号码"</string>
+    <string name="me" msgid="341726346007839961">"我"</string>
     <string name="sending_message" msgid="222836893217450538">"正在发送…"</string>
 
     <!-- Faruq: CyanogenMod poison -->
@@ -351,7 +351,7 @@
     <string name="pref_mms_notification_led_color_magenta">品红色</string>
     <string name="pref_mms_notification_led_color_pink">粉色</string>
     <string name="pref_mms_notification_led_color_orange">橙色</string>
-    <string name="pref_mms_notification_led_color_light_blue">亮蓝色</string>
+    <string name="pref_mms_notification_led_color_light_blue">浅蓝色</string>
 
     <string name="pref_title_mms_notification_led_blink_rate">呼吸灯闪烁频率</string>
     <string name="pref_summary_mms_notification_led_blink_rate">更改呼吸灯明暗变化的频率</string>
@@ -364,8 +364,8 @@
 <!-- Extra Settings: -->
 <string name="pref_extra_settings">其他设置</string>
 
-<string name="pref_title_mms_back_to_all_threads">返回到短信列表</string>
-    <string name="pref_summary_mms_back_to_all_threads">点击返回键时总是返回到短信列表</string>
+<string name="pref_title_mms_back_to_all_threads">返回到所有会话列表</string>
+    <string name="pref_summary_mms_back_to_all_threads">点击返回键时总是返回到所有会话列表</string>
 
     <string name="pref_title_mms_fullscreen_landscape">横屏全键盘</string>
     <string name="pref_summary_mms_fullscreen_landscape">允许/禁用 横屏模式下的全屏键盘</string>
@@ -374,14 +374,14 @@
     <string name="pref_summary_mms_send_on_enter">允许/禁用 通过按回车键发送短信</string>
 
     <string name="pref_mms_custom_option">自定义..</string>
-    <string name="pref_title_mms_user_agent">自定义 User-Agent</string>
-    <string name="pref_summary_mms_user_agent">伪装成其他品牌的手机以使用彩信功能</string>
-    <string name="pref_mms_user_agent_custom_set">自定义 User-Agent 为:\n</string>
+    <string name="pref_title_mms_user_agent">自定义用户代理标识</string>
+    <string name="pref_summary_mms_user_agent">设置用户代理标识为其他手机以使用彩信功能</string>
+    <string name="pref_mms_user_agent_custom_set">自定义用户代理标识为:\n</string>
     <string name="pref_title_mms_email_addr_completion">邮件地址自动完成</string>
-    <string name="pref_summary_mms_email_addr_completion">启用/禁用 接收者的邮件地址自动完成功能</string>
+    <string name="pref_summary_mms_email_addr_completion">开关接收者的邮件地址自动完成功能</string>
 
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">黑色背景</string>
-    <string name="pref_summary_mms_black_background">启用/禁用 黑色背景\n(重启该程序)</string>
+    <string name="pref_summary_mms_black_background">启用/禁用 黑色背景\n(需重启程序)</string>
 
 </resources>
