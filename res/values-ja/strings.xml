@@ -382,5 +382,10 @@
 
     <string name="pref_title_mms_black_background">黒い背景</string>
     <string name="pref_summary_mms_black_background">黒い背景を使用するかどうか切り替える(要Mms再起動)</string>
+
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">メッセージフォントサイズ</string>
+    <string name="pref_summary_mms_message_font_size">メッセージビューのフォントサイズを変更する</string>
+    <string name="pref_dialogtitle_mms_message_font_size">フォントサイズを選択</string>
 </resources>
 

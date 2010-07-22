@@ -72,6 +72,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String USER_AGENT_CUSTOM            = "pref_key_mms_user_agent_custom";
     public static final String EMAIL_ADDR_COMPLETION        = "pref_key_mms_email_addr_completion";
     public static final String BLACK_BACKGROUND      = "pref_key_mms_black_background";
+    public static final String MESSAGE_FONT_SIZE     = "pref_key_mms_message_font_size";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
