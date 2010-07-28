@@ -2112,13 +2112,14 @@ public class ComposeMessageActivity extends Activity
             case KeyEvent.KEYCODE_BACK:
                 exitComposeMessageActivity(new Runnable() {
                     public void run() {
-                        finish();
+                        // Always return to all threads
+                        if (mBackToAllThreads) {
+                            goToConversationList();
+                        } else {
+                            finish();
+                        }
                     }
                 });
-                // Always return to all threads
-                if (mBackToAllThreads) {
-                    goToConversationList();
-                }
                 return true;
         }
 
