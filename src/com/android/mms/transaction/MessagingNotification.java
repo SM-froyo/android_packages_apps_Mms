@@ -59,6 +59,7 @@ import android.text.TextUtils;
 import android.text.style.StyleSpan;
 import android.util.Log;
 import android.widget.Toast;
+import android.telephony.TelephonyManager;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -511,6 +512,11 @@ public class MessagingNotification {
                 vibrateWhen = context.getString(R.string.prefDefault_vibrateWhen);
             }
 
+            // Fetch call state (kanged from SMSPopup)
+            TelephonyManager mTM = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            boolean callStateIdle = mTM.getCallState() == TelephonyManager.CALL_STATE_IDLE;
+            
+            boolean vibrateOnCall = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
             boolean vibrateAlways = vibrateWhen.equals("always");
             boolean vibrateSilent = vibrateWhen.equals("silent");
             AudioManager audioManager =
@@ -518,7 +524,7 @@ public class MessagingNotification {
             boolean nowSilent =
                 audioManager.getRingerMode() == AudioManager.RINGER_MODE_VIBRATE;
 
-            if (vibrateAlways || vibrateSilent && nowSilent) {
+            if ((vibrateAlways || vibrateSilent && nowSilent) && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
                 /*
                 ** Faruq: Cyanogen poison
                 */

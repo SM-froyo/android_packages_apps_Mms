@@ -359,6 +359,8 @@
     <string name="pref_title_mms_notification_vibrate_settings">Impostazioni vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Sequenza di vibrazione</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Cambia sequenza</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibra durante chiamata</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Abilita vibrazione durante una chiamata</string>
 
 	<!-- Extra Settings: -->
 	<string name="pref_extra_settings">Impostazioni extra</string>
@@ -382,4 +384,9 @@
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">Sfondo nero</string>
     <string name="pref_summary_mms_black_background">Attiva/disattiva sfondo nero\n(Riavvia app)</string>
+   
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Dimensione caratteri</string>
+    <string name="pref_summary_mms_message_font_size">Cambia la dimensione dei caratteri dei messaggi</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Seleziona dimensione</string>
 </resources>
