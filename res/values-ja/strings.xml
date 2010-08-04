@@ -334,28 +334,8 @@
     <string name="sending_message" msgid="222836893217450538">"送信中..."</string>
 
     <!-- Faruq: CyanogenMod poison -->
-    <!-- Change LED color for message notification -->
-    <string name="pref_title_mms_notification_led_settings">LED設定</string>
-    <string name="pref_title_mms_notification_led">LEDを点滅させる</string>
-    <string name="pref_summary_mms_notification_led">メッセージを受信したらLEDを点滅させる</string>
-    <string name="pref_title_mms_notification_led_color">LEDカラー</string>
-    <string name="pref_summary_mms_notification_led_color">LEDのカラーを変更する</string>
-    <string name="pref_dialogtitle_mms_notification_led_color">LEDカラーを選択してください</string>
-
-    <string name="pref_mms_notification_led_color_green">グリーン/デフォルト</string>
-    <string name="pref_mms_notification_led_color_white">ホワイト</string>
-    <string name="pref_mms_notification_led_color_red">レッド</string>
-    <string name="pref_mms_notification_led_color_blue">ブルー</string>
-    <string name="pref_mms_notification_led_color_yellow">イエロー</string>
-    <string name="pref_mms_notification_led_color_cyan">シアン</string>
-    <string name="pref_mms_notification_led_color_magenta">マゼンタ</string>
-    <string name="pref_mms_notification_led_color_pink">ピンク</string>
-    <string name="pref_mms_notification_led_color_orange">オレンジ</string>
-    <string name="pref_mms_notification_led_color_light_blue">ライトブルー</string>
-
-    <string name="pref_title_mms_notification_led_blink_rate">LED点滅間隔</string>
-    <string name="pref_summary_mms_notification_led_blink_rate">LEDの点滅間隔を変更する</string>
-    <string name="pref_dialogtitle_mms_notification_led_blink_rate">LED点滅間隔を選択してください</string>
+    <string name="pref_title_mms_notification_vibrate_call">"着信で振動する"</string>
+    <string name="pref_summary_mms_notification_vibrate_call">"着信中に振動する"</string>
 
     <string name="pref_title_mms_notification_vibrate_settings">振動設定</string>
     <string name="pref_title_mms_notification_vibrate_pattern">振動パターン</string>
