@@ -61,9 +61,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
 	/*
 	** Faruq: CyanogenMod poison
 	*/
-	public static final String NOTIFICATION_LED         = "pref_key_mms_notification_led";
-    public static final String NOTIFICATION_LED_COLOR   = "pref_key_mms_notification_led_color";
-    public static final String NOTIFICATION_LED_BLINK_RATE = "pref_key_mms_notification_led_blink_rate";
     public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
     public static final String NOTIFICATION_VIBRATE_CALL = "pref_key_mms_notification_vibrate_call";
     public static final String FULLSCREEN_LANDSCAPE            = "pref_key_mms_fullscreen_landscape";

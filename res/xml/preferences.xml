@@ -88,29 +88,6 @@
                               android:ringtoneType="notification"
                               android:defaultValue="content://settings/system/notification_sound" />
         </PreferenceCategory>
-        <PreferenceCategory android:title="@string/pref_title_mms_notification_led_settings">
-          <CheckBoxPreference android:key="pref_key_mms_notification_led"
-                              android:dependency="pref_key_enable_notifications"
-                              android:defaultValue="true"
-                              android:title="@string/pref_title_mms_notification_led"
-                              android:summary="@string/pref_summary_mms_notification_led" />
-          <ListPreference android:key="pref_key_mms_notification_led_color"
-                          android:dependency="pref_key_mms_notification_led"
-                          android:defaultValue="green"
-                          android:title="@string/pref_title_mms_notification_led_color"
-                          android:summary="@string/pref_summary_mms_notification_led_color"
-                          android:entries="@array/pref_mms_notification_led_color_entries"
-                          android:entryValues="@array/pref_mms_notification_led_color_values"
-                          android:dialogTitle="@string/pref_dialogtitle_mms_notification_led_color" />
-          <ListPreference android:key="pref_key_mms_notification_led_blink_rate"
-                          android:dependency="pref_key_mms_notification_led"
-                          android:defaultValue="2"
-                          android:title="@string/pref_title_mms_notification_led_blink_rate"
-                          android:summary="@string/pref_summary_mms_notification_led_blink_rate"
-                          android:entries="@array/pref_mms_notification_led_blink_rate_entries"
-                          android:entryValues="@array/pref_mms_notification_led_blink_rate_values"
-                          android:dialogTitle="@string/pref_dialogtitle_mms_notification_led_blink_rate" />
-        </PreferenceCategory>
         <PreferenceCategory android:title="@string/pref_title_mms_notification_vibrate_settings">
           <ListPreference android:layout="?android:attr/preferenceLayoutChild"
                         android:dependency="pref_key_enable_notifications"
