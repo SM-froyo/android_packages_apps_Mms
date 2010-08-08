@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -28,6 +29,7 @@ import android.provider.Telephony.Mms;
 import android.telephony.PhoneNumberUtils;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.View;
 
 import android.database.sqlite.SqliteWrapper;
 import com.android.mms.ui.MessageUtils;
@@ -148,7 +150,7 @@ public class Contact {
         return (s != null ? s : "");
     }
 
-    public static String formatNameAndNumber(String name, String number) {
+    public static String formatNameAndNumber(String name, String number, CharSequence label) {
         // Format like this: Mike Cleron <(650) 555-1234>
         //                   Erick Tseng <(650) 555-1212>
         //                   Tutankhamun <tutank1341@gmail.com>
@@ -157,14 +159,32 @@ public class Contact {
         if (!Mms.isEmailAddress(number)) {
             formattedNumber = PhoneNumberUtils.formatNumber(number);
         }
-
+        String sLabel = shortLabel(label.toString());
         if (!TextUtils.isEmpty(name) && !name.equals(number)) {
-            return name + " <" + formattedNumber + ">";
+            return name + " <" + sLabel + formattedNumber + ">";
         } else {
             return formattedNumber;
         }
     }
 
+    private static String shortLabel(String label) {
+    	String sLabel = "";
+    	// copied from RecipientsAdapter - don't show label if there's nothing there 
+    	Log.d("MIKE","starting label is "+ label);
+    	if (label.length() == 0 ||
+                (label.length() == 1 && label.charAt(0) == '\u00A0')) {
+    		return "";
+    	}
+    	// otherwise, shorten label for display in addressee box and singleline autocompleter (landscape)
+    	String split[] = TextUtils.split(label, " ");
+            for (int i=0; i<split.length; i++) {
+            	char initial = split[i].charAt(0);
+            	sLabel = sLabel + initial;
+            }
+    	sLabel = sLabel.toLowerCase() + ":";
+    	return sLabel;
+    }
+    
     public synchronized void reload() {
         mIsStale = true;
         sContactCache.get(mNumber, false);
@@ -205,7 +225,7 @@ public class Contact {
     }
 
     private void notSynchronizedUpdateNameAndNumber() {
-        mNameAndNumber = formatNameAndNumber(mName, mNumber);
+        mNameAndNumber = formatNameAndNumber(mName, mNumber, mLabel);
     }
 
     public synchronized long getRecipientId() {

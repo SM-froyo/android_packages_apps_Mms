@@ -121,7 +121,7 @@ public class RecipientsAdapter extends ResourceCursorAdapter {
                        .replace(",", " ");  // Make sure we leave a space between parts of names.
         }
 
-        String nameAndNumber = Contact.formatNameAndNumber(name, number);
+        String nameAndNumber = Contact.formatNameAndNumber(name, number, displayLabel);
 
         SpannableString out = new SpannableString(nameAndNumber);
         int len = out.length();
