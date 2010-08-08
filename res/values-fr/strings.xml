@@ -332,4 +332,27 @@
     <string name="too_many_unsent_mms" msgid="8005932837414848242">"Impossible d\'envoyer le message maintenant. Il existe un trop grand nombre de messages multimédias non envoyés."</string>
     <string name="me" msgid="341726346007839961">"Moi"</string>
     <string name="sending_message" msgid="222836893217450538">"Envoi en cours…"</string>
+    <string name="pref_title_mms_notification_vibrate_settings">Paramètres du vibreur</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Séquence de vibration</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Changer la séquence de vibration</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibrer en appel</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Autoriser la vibration lors d\'un appel</string>
+	<string name="pref_extra_settings">Paramètres supplémentaires</string>
+	<string name="pref_title_mms_back_to_all_threads">Retour à la liste des fils</string>
+    <string name="pref_summary_mms_back_to_all_threads">Aller à la liste des fils lorsque la touche retour est appuyée</string>
+    <string name="pref_title_mms_fullscreen_landscape">Paysage plein écran</string>
+    <string name="pref_summary_mms_fullscreen_landscape">Activer/désactiver le mode plein écran lorsque l\'application est affichée en format paysage</string>
+    <string name="pref_title_mms_send_on_enter">Envoyer avec entrée</string>
+    <string name="pref_summary_mms_send_on_enter">Envoyer le message lorsque la touche entrée est appuyée</string>
+    <string name="pref_mms_custom_option">Personnalisé...</string>
+    <string name="pref_title_mms_user_agent">User-Agent personnalisé</string>
+    <string name="pref_summary_mms_user_agent">Se faire passer pour un autre modèle de téléphone pour les MMS</string>
+    <string name="pref_mms_user_agent_custom_set">User-Agent réglé à :\n</string>
+    <string name="pref_title_mms_email_addr_completion">Auto-complétion e-mail</string>
+    <string name="pref_summary_mms_email_addr_completion">Activer la complétion automatique des adresses e-mail dans le champ destinataire</string>
+    <string name="pref_title_mms_black_background">Fond noir</string>
+    <string name="pref_summary_mms_black_background">Rendre l\'arrière-plan noir\n(Relancer l\'application)</string>
+    <string name="pref_title_mms_message_font_size">Taille de la police</string>
+    <string name="pref_summary_mms_message_font_size">Changer la taille de la police utilisée pour afficher les messages</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Choisir la taille de la police</string>
 </resources>
