@@ -151,15 +151,17 @@ public class Contact {
     }
 
     public static String formatNameAndNumber(String name, String number, CharSequence label) {
-        // Format like this: Mike Cleron <(650) 555-1234>
-        //                   Erick Tseng <(650) 555-1212>
+        // Format like this: Mike Cleron <h:(650) 555-1234>
+        //                   Erick Tseng <m:(650) 555-1212>
         //                   Tutankhamun <tutank1341@gmail.com>
         //                   (408) 555-1289
+    	// This formatting is what is displayed in addressee and/or single line horizontal autocomplete box (landscape only)
+    	// h, n labels will be removed once user picks 'next' or clicks in message body
         String formattedNumber = number;
         if (!Mms.isEmailAddress(number)) {
             formattedNumber = PhoneNumberUtils.formatNumber(number);
         }
-        String sLabel = shortLabel(label.toString());
+        String sLabel = shortLabel((String)label);
         if (!TextUtils.isEmpty(name) && !name.equals(number)) {
             return name + " <" + sLabel + formattedNumber + ">";
         } else {
@@ -170,12 +172,15 @@ public class Contact {
     private static String shortLabel(String label) {
     	String sLabel = "";
     	// copied from RecipientsAdapter - don't show label if there's nothing there 
-    	Log.d("MIKE","starting label is "+ label);
-    	if (label.length() == 0 ||
-                (label.length() == 1 && label.charAt(0) == '\u00A0')) {
-    		return "";
-    	}
-    	// otherwise, shorten label for display in addressee box and singleline autocompleter (landscape)
+    	try {
+    	    if (label.length() == 0 ||
+                    (label.length() == 1 && label.charAt(0) == '\u00A0')) {
+    		    return "";
+    	    }
+    	    } catch (NullPointerException e) {
+    	    return "";
+    	    }
+    	// otherwise, shorten label for display in singleline autocompleter (landscape)
     	String split[] = TextUtils.split(label, " ");
             for (int i=0; i<split.length; i++) {
             	char initial = split[i].charAt(0);
