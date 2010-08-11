@@ -135,6 +135,10 @@
                         android:entries="@array/pref_mms_user_agent_entries"
                         android:entryValues="@array/pref_mms_user_agent_values"
                         android:dialogTitle="@string/pref_title_mms_user_agent" />
+    <CheckBoxPreference android:key="pref_key_mms_only_mobile_numbers"
+                        android:title="@string/pref_title_only_mobile_numbers"
+                        android:summary="@string/pref_summary_only_mobile_numbers"
+                        android:defaultValue="false" />
     <CheckBoxPreference android:key="pref_key_mms_email_addr_completion"
                         android:title="@string/pref_title_mms_email_addr_completion"
                         android:summary="@string/pref_summary_mms_email_addr_completion"

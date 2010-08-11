@@ -334,28 +334,6 @@
     <string name="sending_message" msgid="222836893217450538">"Wird gesendet…"</string>
 
     <!-- Faruq: CyanogenMod poison -->
-    <!-- Change LED color for message notification -->
-    <string name="pref_title_mms_notification_led_settings">LED-Einstellungen</string>
-    <string name="pref_title_mms_notification_led">LED-Blinken</string>
-    <string name="pref_summary_mms_notification_led">Blinken der LED nach Empfang einer Nachricht</string>
-    <string name="pref_title_mms_notification_led_color">LED-Farbe</string>
-    <string name="pref_summary_mms_notification_led_color">Farbe der LED einstellen</string>
-    <string name="pref_dialogtitle_mms_notification_led_color">Wähle die LED-Farbe</string>
-
-    <string name="pref_mms_notification_led_color_green">Grün (Standard)</string>
-    <string name="pref_mms_notification_led_color_white">Weiß</string>
-    <string name="pref_mms_notification_led_color_red">Rot</string>
-    <string name="pref_mms_notification_led_color_blue">Blau</string>
-    <string name="pref_mms_notification_led_color_yellow">Gelb</string>
-    <string name="pref_mms_notification_led_color_cyan">Cyan</string>
-    <string name="pref_mms_notification_led_color_magenta">Magenta</string>
-    <string name="pref_mms_notification_led_color_pink">Pink</string>
-    <string name="pref_mms_notification_led_color_orange">Orange</string>
-    <string name="pref_mms_notification_led_color_light_blue">Hellblau</string>
-
-    <string name="pref_title_mms_notification_led_blink_rate">LED-Blinkrate</string>
-    <string name="pref_summary_mms_notification_led_blink_rate">Geschwindigkeit des LED-Blinkens ändern</string>
-    <string name="pref_dialogtitle_mms_notification_led_blink_rate">Wähle die LED-Blinkrate</string>
 
     <string name="pref_title_mms_notification_vibrate_settings">Vibrationseinstellungen</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmuster</string>
