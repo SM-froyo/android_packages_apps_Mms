@@ -357,6 +357,8 @@
     <string name="pref_title_mms_user_agent">Scegli User-Agent</string>
     <string name="pref_summary_mms_user_agent">Fingi che il telefono sia un modello differente (utile per gli MMS)</string>
     <string name="pref_mms_user_agent_custom_set">User-agent impostato:\n</string>
+    <string name="pref_title_only_mobile_numbers">Solo numeri mobili</string>
+    <string name="pref_summary_only_mobile_numbers">Attiva per poter visualizzare solo numeri mobili nel campo del destinatario</string>
     <string name="pref_title_mms_email_addr_completion">Completamento ind. Email</string>
     <string name="pref_summary_mms_email_addr_completion">Attiva/disattiva completamento automatico indirizzo email nel campo del destinatario</string>
 
