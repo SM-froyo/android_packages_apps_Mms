@@ -358,6 +358,8 @@
     <string name="pref_summary_mms_user_agent">MMSクライアントのUser-Agent文字列を変更する</string>
     <string name="pref_mms_user_agent_custom_set">設定されているUser-Agent:\n</string>
     <string name="pref_title_mms_email_addr_completion">メールアドレス補完</string>
+    <string name="pref_title_only_mobile_numbers">携帯番号のみ</string>
+    <string name="pref_summary_only_mobile_numbers">宛先フィールドには携帯電話の番号のみ表示する</string>
     <string name="pref_summary_mms_email_addr_completion">宛先フィールドでメールアドレスの自動補完を有効にする</string>
 
     <string name="pref_title_mms_black_background">黒い背景</string>
