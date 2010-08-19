@@ -72,6 +72,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String BLACK_BACKGROUND      = "pref_key_mms_black_background";
     public static final String MESSAGE_FONT_SIZE     = "pref_key_mms_message_font_size";
     public static final String ONLY_MOBILE_NUMBERS      = "pref_key_mms_only_mobile_numbers";
+    public static final String FULL_TIMESTAMP           = "pref_key_mms_full_timestamp";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;

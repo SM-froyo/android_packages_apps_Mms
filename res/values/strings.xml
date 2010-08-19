@@ -787,6 +787,9 @@
     <string name="pref_title_mms_black_background">Black Background</string>
     <string name="pref_summary_mms_black_background">Enable/disable black background\n(Restart Mms)</string>
 
+    <string name="pref_title_mms_full_timestamp">Full timestamps</string>
+    <string name="pref_summary_mms_full_timestamp">Enable to show both date and time in message timestamps</string>
+
     <!-- Message Font size -->
     <string name="pref_title_mms_message_font_size">Message font size</string>
     <string name="pref_summary_mms_message_font_size">Change font size of message view</string>

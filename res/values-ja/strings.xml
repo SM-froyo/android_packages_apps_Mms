@@ -365,6 +365,9 @@
     <string name="pref_title_mms_black_background">黒い背景</string>
     <string name="pref_summary_mms_black_background">黒い背景を使用するかどうか切り替える(要Mms再起動)</string>
 
+    <string name="pref_title_mms_full_timestamp">送信日時を省略しない</string>
+    <string name="pref_summary_mms_full_timestamp">送信日時を日付と時刻を含む完全な書式で表示する</string>
+
     <!-- Message Font size -->
     <string name="pref_title_mms_message_font_size">メッセージフォントサイズ</string>
     <string name="pref_summary_mms_message_font_size">メッセージビューのフォントサイズを変更する</string>

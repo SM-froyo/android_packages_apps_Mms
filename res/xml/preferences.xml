@@ -147,6 +147,10 @@
                         android:title="@string/pref_title_mms_black_background"
                         android:summary="@string/pref_summary_mms_black_background"
                         android:defaultValue="true" />
+    <CheckBoxPreference android:key="pref_key_mms_full_timestamp"
+                        android:title="@string/pref_title_mms_full_timestamp"
+                        android:summary="@string/pref_summary_mms_full_timestamp"
+                        android:defaultValue="true" />
     <ListPreference android:key="pref_key_mms_message_font_size"
                     android:defaultValue="18"
                     android:title="@string/pref_title_mms_message_font_size"

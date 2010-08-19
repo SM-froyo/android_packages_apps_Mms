@@ -364,6 +364,9 @@
     <string name="pref_title_mms_black_background">Schwarzer Hintergrund</string>
     <string name="pref_summary_mms_black_background">Schwarzen Hintergrund ein-/ausschahlten.\n(Neustart von MMS)</string>
 
+    <string name="pref_title_mms_full_timestamp">Volle Zeitangabe</string>
+    <string name="pref_summary_mms_full_timestamp">Einschalten um Datum und Zeit anzuzeigen</string>
+
     <!-- Message Font size -->
     <string name="pref_title_mms_message_font_size">Schriftgröße</string>
     <string name="pref_summary_mms_message_font_size">Schriftgröße in der Nachrichtenansicht ändern</string>
