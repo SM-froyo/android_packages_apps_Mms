@@ -354,6 +354,8 @@
     <string name="pref_summary_mms_email_addr_completion">Activer la complétion automatique des adresses e-mail dans le champ destinataire</string>
     <string name="pref_title_mms_black_background">Fond noir</string>
     <string name="pref_summary_mms_black_background">Rendre l\'arrière-plan noir\n(Relancer l\'application)</string>
+    <string name="pref_title_mms_full_timestamp">Horodatages complets</string>
+    <string name="pref_summary_mms_full_timestamp">Activer pour afficher la date et l\'heure dans l\'horodatage des messages</string>
     <string name="pref_title_mms_message_font_size">Taille de la police</string>
     <string name="pref_summary_mms_message_font_size">Changer la taille de la police utilisée pour afficher les messages</string>
     <string name="pref_dialogtitle_mms_message_font_size">Choisir la taille de la police</string>
