@@ -34,7 +34,7 @@ import com.android.mms.LogTag;
 public class MessageStatusReceiver extends BroadcastReceiver {
     public static final String MESSAGE_STATUS_RECEIVED_ACTION =
             "com.android.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED";
-    private static final String[] ID_PROJECTION = new String[] { Sms._ID, Sms.ADDRESS };
+    private static final String[] ID_PROJECTION = new String[] { Sms._ID, Sms.ADDRESS, Sms.STATUS };
     private static final String LOG_TAG = "MessageStatusReceiver";
     private static final Uri STATUS_URI =
             Uri.parse("content://sms/status");
@@ -80,11 +80,15 @@ public class MessageStatusReceiver extends BroadcastReceiver {
                 contentValues.put(Sms.STATUS, status);
                 SqliteWrapper.update(context, context.getContentResolver(),
                                     updateUri, contentValues, null, null);
-                // Status is only changed to STATUS_COMPLETE once. We call this every
-                // time this happens to ensure that we get a notification for each
-                // delivery and not just the latest one if several messages change
-                // status at the same time. This call is non blocking since we are in UI thread.
-                if (status == Sms.STATUS_COMPLETE) {
+                // When status changes to STATUS_COMPLETE from some other status
+                // it's time to show delivery notifications. Must use message id
+                // to ensure notifications for all recipients if many, not just
+                // the last one. Comparing status before and after this status
+                // update came from the network is required for long (>160) SMS,
+                // otherwise we will get multiple delivery notifications (one for
+                // each partial SMS).
+                // This call is non blocking since we are in UI thread.
+                if (status == Sms.STATUS_COMPLETE && cursor.getInt(2) != Sms.STATUS_COMPLETE) {
                     MessagingNotification.nonBlockingShowDelivery(context, cursor.getString(1));
                 }
             } else {
