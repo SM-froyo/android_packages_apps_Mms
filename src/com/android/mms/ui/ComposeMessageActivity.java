@@ -2009,6 +2009,18 @@ public class ComposeMessageActivity extends Activity
             mMsgListAdapter.changeCursor(null);
         }
 
+        /*
+         *  Release the cursor during onStop since nDestroy isn't necessarily
+         *  going to get called, typically resources are released onStop similar
+         *  to mMsgListAdapter
+         */
+        if (mRecipientsEditor != null) {
+            CursorAdapter recipientsAdapter = (CursorAdapter)mRecipientsEditor.getAdapter();
+            if (recipientsAdapter != null) {
+                recipientsAdapter.changeCursor(null);
+            }
+        }
+
         if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
             log("onStop: save draft");
         }
@@ -2024,12 +2036,6 @@ public class ComposeMessageActivity extends Activity
             android.os.Debug.stopMethodTracing();
         }
 
-        if (mRecipientsEditor != null) {
-            CursorAdapter recipientsAdapter = (CursorAdapter)mRecipientsEditor.getAdapter();
-            if (recipientsAdapter != null) {
-                recipientsAdapter.changeCursor(null);
-            }
-        }
         super.onDestroy();
     }
 
