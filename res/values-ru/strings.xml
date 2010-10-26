@@ -333,4 +333,34 @@
     <string name="too_many_unsent_mms" msgid="8005932837414848242">"Не удается отправить сообщение сейчас. Слишком много неотправленных MMS."</string>
     <string name="me" msgid="341726346007839961">"Я"</string>
     <string name="sending_message" msgid="222836893217450538">"Идет отправка…"</string>
+	
+    <string name="pref_title_mms_notification_vibrate_settings">Настройки вибросигнала</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Шаблоны вибрации</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Выберите шаблон вибрации</string>
+    <string name="pref_title_mms_notification_vibrate_call">Вибрировать при разговоре</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрировать во время разговора</string>
+    <string name="pref_extra_settings">Дополнительные настройки</string>
+    <string name="pref_title_mms_back_to_all_threads">Возвращаться ко всем сообщениям</string>
+    <string name="pref_summary_mms_back_to_all_threads">Всегда возвращаться ко всем сообщениям при нажатии кнопки Back</string>
+    <string name="pref_title_mms_fullscreen_landscape">Полноэкранная клавиатура</string>
+    <string name="pref_summary_mms_fullscreen_landscape">Включение/отключение полноэкранной клавиатуры в ландшафтном режиме</string>
+    <string name="pref_title_mms_send_on_enter">Отправлять по Enter</string>
+    <string name="pref_summary_mms_send_on_enter">Включение/отключение отправки сообщения при нажатии кнопки Enter</string>
+    <string name="pref_mms_custom_option">Свой...</string>
+    <string name="pref_title_mms_user_agent">Свой User-Agent</string>
+    <string name="pref_summary_mms_user_agent">Укажите свой User-Agent для MMS</string>
+    <string name="pref_mms_user_agent_custom_set">User Agent теперь:\n</string>
+    <string name="pref_title_only_mobile_numbers">Только мобильные</string>
+    <string name="pref_summary_only_mobile_numbers">Показывать только мобильные номера в поле получателя</string>
+    <string name="pref_title_mms_email_addr_completion">Автозавершение Email</string>
+    <string name="pref_summary_mms_email_addr_completion">Включение/отключение автозавершения email адреса в поле получателя</string>
+    <string name="pref_title_mms_black_background">Чёрный фон</string>
+    <string name="pref_summary_mms_black_background">Включение/отключение чёрного фона\n(Требуется перезапуск SMS/MMS)</string>
+    <string name="pref_title_mms_full_timestamp">Показывать время</string>
+    <string name="pref_summary_mms_full_timestamp">Показывать и дату и время в сообщении</string>
+    <string name="pref_title_mms_message_font_size">Шрифт сообщения</string>
+    <string name="pref_summary_mms_message_font_size">Измените размер шрифта для просмотра сообщения</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Выберите размер шрифта</string>
+    <string name="pref_title_save_location">Папка для прикреплённых файлов</string>
+	
 </resources>
