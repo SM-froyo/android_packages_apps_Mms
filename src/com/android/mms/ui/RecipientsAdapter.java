@@ -71,7 +71,7 @@ public class RecipientsAdapter extends ResourceCursorAdapter {
         Email.TYPE,                 // 2
         Email.DATA,               // 3
         Email.LABEL,                // 4
-        Email.DISPLAY_NAME,         // 5
+        Phone.DISPLAY_NAME,         // 5
     };
 
     private static final String SORT_ORDER = Contacts.TIMES_CONTACTED + " DESC,"
