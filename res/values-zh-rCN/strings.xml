@@ -376,20 +376,6 @@
         <item>从不</item>
     </string-array>
 
-    <!-- The default vibrateWhen value, when none is set -->
-    <string translatable="false" name="prefDefault_vibrateWhen">never</string>
-    <!-- The value to use when migrating from old versions for a true vibrate setting -->
-    <string translatable="false" name="prefDefault_vibrate_true">always</string>
-    <!-- The value to use when migrating from old versions for a false vibrate setting -->
-    <string translatable="false" name="prefDefault_vibrate_false">never</string>
-
-    <!-- The vibrateWhen values -->
-    <string-array translatable="false" name="prefValues_vibrateWhen">
-        <item>always</item>
-        <item>silent</item>
-        <item>never</item>
-    </string-array>
-
     <!-- Dialog title for the Vibrate dialog -->
     <string name="prefDialogTitle_vibrateWhen">振动</string>
 
@@ -765,10 +751,10 @@
     <string name="pref_title_mms_notification_vibrate_call">通话中收到消息时振动</string>
     <string name="pref_summary_mms_notification_vibrate_call">当通话中收到消息时振动手机</string>
 
-	<!-- Extra Settings: -->
-	<string name="pref_extra_settings">其他设置</string>
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">其他设置</string>
 
-	<string name="pref_title_mms_back_to_all_threads">返回到所有会话列表</string>
+    <string name="pref_title_mms_back_to_all_threads">返回到所有会话列表</string>
     <string name="pref_summary_mms_back_to_all_threads">点击返回键时总是返回到所有会话列表</string>
 
     <string name="pref_title_mms_fullscreen_landscape">横屏全键盘</string>
