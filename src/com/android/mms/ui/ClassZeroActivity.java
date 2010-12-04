@@ -183,7 +183,10 @@ public class ClassZeroActivity extends Activity {
         ContentValues values = new ContentValues();
 
         values.put(Inbox.ADDRESS, sms.getDisplayOriginatingAddress());
-        values.put(Inbox.DATE, sms.getTimestampMillis());
+
+        // Use now for the timestamp to avoid confusion with clock
+        // drift between the handset and the SMSC.
+        values.put(Inbox.DATE, new Long(System.currentTimeMillis()));
         values.put(Inbox.PROTOCOL, sms.getProtocolIdentifier());
         values.put(Inbox.READ, Integer.valueOf(mRead ? 1 : 0));
         values.put(Inbox.SEEN, Integer.valueOf(mRead ? 1 : 0));
